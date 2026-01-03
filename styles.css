@@ -36,8 +36,9 @@ section {
 
 
 .hero h1 {
-  font-size: 50px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  white-space: nowrap;           /* keep on one line */
+  font-size: clamp(24px, 6vw, 56px);
 }
 
 .subtitle {
@@ -47,8 +48,9 @@ section {
 
 .date {
   margin-top: 8px;
-  font-size: 50px;
   font-weight: 600;
+   white-space: nowrap;           /* keep on one line */
+  font-size: clamp(24px, 6vw, 56px);
 }
 
 /* =========================
