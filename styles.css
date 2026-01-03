@@ -33,7 +33,7 @@ section {
 
 .date {
   margin-top: 8px;
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 600;
 }
 
@@ -157,6 +157,106 @@ section {
 .qr img {
   width: 160px;
   margin-top: 20px;
+}
+
+/* OVERLAY */
+#music-overlay {
+  position: fixed;
+  inset: 0;
+  background: #faf7f2;
+  z-index: 9999;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* ENVELOPE */
+.envelope {
+  position: relative;
+  width: 260px;
+  height: 180px;
+}
+
+.envelope-back {
+  position: absolute;
+  inset: 0;
+  background: #f1e8dc;
+  border-radius: 6px;
+}
+
+.envelope-front {
+  position: absolute;
+  inset: 0;
+  background: #e6dbcd;
+  border-radius: 6px;
+  z-index: 3;
+}
+
+/* FLAP */
+.envelope-flap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: #e0d4c4;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  transform-origin: top;
+  transition: transform 0.8s ease;
+  z-index: 4;
+}
+
+/* LETTER */
+.letter {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  height: 140px;
+  background: #fff;
+  border-radius: 4px;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transform: translateY(40px);
+  transition: transform 0.8s ease 0.4s;
+}
+
+.letter p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.letter span {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* OPEN STATE */
+.envelope.open .envelope-flap {
+  transform: rotateX(180deg);
+}
+
+.envelope.open .letter {
+  transform: translateY(-40px);
+}
+
+/* BUTTON */
+#enter-btn {
+  font-family: 'Playfair Display', serif;
+  padding: 14px 28px;
+  border-radius: 30px;
+  border: 1px solid #333;
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 
