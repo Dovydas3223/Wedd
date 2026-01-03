@@ -17,12 +17,26 @@ section {
    HERO (MOBILE)
 ========================= */
 .hero {
-  background-color: #f1e8dc;
-  padding: 80px 16px;
+  position: relative;
+  padding: 120px 20px;
+  text-align: center;
+  color: #2f2f2f;
+
+  background-image:
+    linear-gradient(
+      rgba(243, 214, 177, 0.85),
+      rgba(241, 232, 220, 0.85)
+    ),
+    url("images/back.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+
 .hero h1 {
-  font-size: 32px;
+  font-size: 50px;
   margin-bottom: 8px;
 }
 
@@ -33,7 +47,7 @@ section {
 
 .date {
   margin-top: 8px;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 600;
 }
 
