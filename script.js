@@ -1,3 +1,15 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("enter-btn");
+  const envelope = document.querySelector(".envelope");
+
+  if (!btn || !envelope) return;
+
+  btn.addEventListener("click", () => {
+    envelope.classList.add("open");
+  });
+});
+
+
 const weddingDate = new Date("2026-08-07T15:00:00").getTime();
 
 setInterval(() => {
