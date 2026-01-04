@@ -213,7 +213,9 @@ section {
   position: absolute;
   inset: 0;
   background: #e6dbcd;
-  border-radius: 6px;
+  
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   z-index: 3;
 }
 
