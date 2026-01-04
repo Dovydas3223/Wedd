@@ -40,11 +40,11 @@ section {
   white-space: nowrap;
 
   /* As big as possible, but never wraps */
-  font-size: clamp(28px, 10vw, 64px);
+  font-size: clamp(28px, 11vw, 70px);
 
   line-height: 1.1;
+  font-family: Dancing Script;
 }
-
 
 .subtitle {
   font-size: 22px;
@@ -55,7 +55,8 @@ section {
   margin-top: 8px;
   font-weight: 600;
    white-space: nowrap;           /* keep on one line */
-  font-size: clamp(28px, 10vw, 64px);
+  font-size: clamp(20px, 10vw, 50px);
+  font-family: Dancing Script;
 }
 
 /* =========================
