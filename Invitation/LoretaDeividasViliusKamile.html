@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <title>Dovydas & Kotryna</title>
+
+  <!-- Mobile-first -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Birthstone" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div id="music-overlay">
+    <div class="envelope">
+      <div class="envelope-back"></div>
+
+      <div class="envelope-front"></div>
+      <div class="envelope-flap"></div>
+    </div>
+  <button id="enter-btn">Atidaryti kvietimą</button>
+</div>
+
+<audio id="bg-music" loop>
+  <source src="../music/Sentimentai.mp3" type="audio/mpeg">
+</audio>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Kotrynos ir Dovydo <br>vestuvės </h1>
+    <p class="date">2026-08-07</p>
+  </section>
+  <!-- HERO -->
+  <section class="details-row2">
+    <h1>LORETA, DEIVIDAI, VILIAU IR KAMILE,</h1>
+    <p>SU DIDELIU DŽIAUGSMU KVIEČIAME DALYVAUTI MŪSŲ MEILĖS ŠVENTĖJE!</p>
+  </section>
+
+
+  <section class="details-row">
+  <!-- DETAILS -->
+  <div class="details">
+    <h2>Ceremonija</h2>
+    <p><strong>Kada:</strong> 15:00 val.</p>
+    <p><strong>Kur:</strong> Tenenių Šv. Barboros bažnyčioje</p>
+  </div>
+
+  <!-- IMAGE -->
+  <div class="photo">
+    <div class="photo-fade">
+      <img
+        src="../images/teneniai_re.jpg"
+        alt="Šventės vieta"
+      >
+    </div>
+  </div>
+</section>
+  <section class="details-row">
+
+  <!-- DETAILS -->
+  <div class="details">
+    <h2>Šventinė vakarienė</h2>
+    <p><strong>Kada:</strong> 16:30 val.</p>
+    <p><strong>Kur:</strong> Tenenių apylinkių dvaras - Raudondavris, Barsukinė, Šilalės r.</p>
+  </div>
+      <!-- IMAGE -->
+  <div class="photo">
+    <div class="photo-fade">
+      <img
+        src="../images/raudondavaris.jpg"
+        alt="Šventės vieta"
+      >
+    </div>
+  </div>
+
+</section>
+
+
+<!-- MAP -->
+<section class="map">
+  <h2>Šventės vieta</h2>
+
+  <div class="map-container">
+    <iframe
+        src="https://maps.google.com/maps?q=55.477333,21.894167&z=16&output=embed"
+        loading="lazy"
+        allowfullscreen=""
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+  </div>
+    <a
+        class="map-button"
+        href="https://maps.google.com/?q=55.477333,21.894167"
+        target="_blank">
+        Atidaryti Google Maps
+    </a>
+</section>
+  <section class="details-row">
+
+  <!-- DETAILS -->
+  <div class="details">
+    <h2>Antroji šventės diena</h2>
+    <p><strong>Kada:</strong> 11:00 val.</p>
+    <p><strong>Kur:</strong> Pusryčiai Tenenių kavinėje, Tenenių mstl., Nepriklausomybės g. 30</p>
+  </div>
+</section>
+
+  <section class="details-row">
+  <!-- DETAILS -->
+  <div class="details">
+    <p>Gėlės nuvysta, o prisiminimai lieka. </p>
+    <p>Todėl didžiausia dovana mums - Jūsų buvimas šią dieną. Labai Jūsų lauksime!</p>
+  </div>
+  </section>
+  <!-- COUNTDOWN -->
+  <section class="countdown">
+    <h2>Iki šventės liko</h2>
+    <div id="timer">
+      <div><span id="days">0</span>d</div>
+      <div><span id="hours">0</span>h</div>
+      <div><span id="minutes">0</span>m</div>
+      <div><span id="seconds">0</span>s</div>
+    </div>
+  </section>
+  <!-- RSVP -->
+  <section class="rsvp">
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSd8M44q6W-3_5qwMo1Gmj3GPoM4uc5NqZrCWi2AKFoQO8IErw/viewform?usp=pp_url"
+      
+      width="100%"
+      height="600"
+      frameborder="0"
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- JS -->
+  <script src="../script.js"></script>
+</body>
+</html>
