@@ -140,6 +140,15 @@ section {
   font-size: 18px;
 }
 
+.details-row2 h1 {
+  margin-bottom: 10px;
+  white-space: nowrap;
+
+  /* As big as possible, but never wraps */
+  font-size: clamp(18px, 11vw, 25px);
+
+  line-height: 1.1;
+}
 /* =========================
    MAP
 ========================= */
