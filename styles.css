@@ -37,13 +37,8 @@ section {
 
 .hero h1 {
   margin-bottom: 10px;
-  white-space: nowrap;
-
-  /* As big as possible, but never wraps */
-  font-size: clamp(50px, 11vw, 70px);
-
-  line-height: 1.1;
-  /*font-family: Birthstone;*/
+  white-space: nowrap;           /* keep on one line */
+  font-size: clamp(30px, 6vw, 70px);
 }
 
 .subtitle {
@@ -55,8 +50,7 @@ section {
   margin-top: 8px;
   font-weight: 600;
    white-space: nowrap;           /* keep on one line */
-  font-size: clamp(20px, 10vw, 50px);
-  /*font-family: Birthstone;*/
+  font-size: clamp(30px, 6vw, 70px);
 }
 
 /* =========================
