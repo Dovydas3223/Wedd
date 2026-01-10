@@ -43,7 +43,7 @@ section {
   font-size: clamp(50px, 11vw, 70px);
 
   line-height: 1.1;
-  font-family: Birthstone;
+  /*font-family: Birthstone;*/
 }
 
 .subtitle {
@@ -56,7 +56,7 @@ section {
   font-weight: 600;
    white-space: nowrap;           /* keep on one line */
   font-size: clamp(20px, 10vw, 50px);
-  font-family: Birthstone;
+  /*font-family: Birthstone;*/
 }
 
 /* =========================
