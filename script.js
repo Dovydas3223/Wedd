@@ -1,15 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const btn = document.getElementById("enter-btn");
-  const envelope = document.querySelector(".envelope");
-
-  if (!btn || !envelope) return;
-
-  btn.addEventListener("click", () => {
-    envelope.classList.add("open");
-  });
-});
-
-
 const weddingDate = new Date("2026-08-07T15:00:00").getTime();
 
 setInterval(() => {
@@ -33,9 +21,9 @@ setInterval(() => {
 
 
 const btn = document.getElementById("enter-btn");
-const overlay = document.getElementById("music-overlay");
 const envelope = document.querySelector(".envelope");
 const music = document.getElementById("bg-music");
+const postOpenMessage = document.getElementById("post-open-message");
 
 btn.addEventListener("click", () => {
   // Open envelope
@@ -45,13 +33,18 @@ btn.addEventListener("click", () => {
   music.volume = 0.4;
   music.play();
 
-  // Fade out overlay after animation
+  // Fade out envelope + button after animation
   setTimeout(() => {
-    overlay.style.opacity = "0";
-    overlay.style.transition = "opacity 0.8s ease";
+    envelope.style.opacity = "0";
+    envelope.style.transition = "opacity 0.8s ease";
+    btn.style.opacity = "0";
+    btn.style.transition = "opacity 0.8s ease";
   }, 1800);
 
+  // Reveal the message
   setTimeout(() => {
-    overlay.style.display = "none";
+    envelope.style.display = "none";
+    btn.style.display = "none";
+    postOpenMessage.classList.add("show");
   }, 2600);
 });

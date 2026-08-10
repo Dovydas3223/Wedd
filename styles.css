@@ -7,6 +7,7 @@ body {
   background-color: #faf7f2;
   color: #333;
   text-align: center;
+  overflow-x: hidden;
 }
 
 section {
@@ -139,7 +140,6 @@ section {
 .details-row2 h1 {
   margin-bottom: 10px;
 
-  /* As big as possible, but never wraps */
   font-size: clamp(18px, 11vw, 25px);
 
   line-height: 1.1;
@@ -147,7 +147,8 @@ section {
 
 .wrapWhitespace h1
 {
-    white-space: nowrap;
+    white-space: normal;
+    overflow-wrap: break-word;
 }
 /* =========================
    MAP
@@ -222,7 +223,7 @@ section {
   position: absolute;
   inset: 0;
   background: #e6dbcd;
-  
+
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   z-index: 3;
@@ -290,6 +291,31 @@ section {
   background: transparent;
   font-size: 18px;
   cursor: pointer;
+}
+
+/* POST-OPEN MESSAGE */
+.post-open-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 320px;
+  padding: 0 24px;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s ease;
+}
+
+.post-open-message.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.post-open-message p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.4;
 }
 
 
